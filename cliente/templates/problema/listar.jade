@@ -1,0 +1,19 @@
+div(layout="row" layout-margin layout-align="center center")
+    div(flex="80" flex-sm="100").md-whiteframe-z1
+        md-toolbar.md-primary
+            .md-toolbar-tools
+                span Problema
+                span(flex)
+                md-button(ui-sref="app.problemaCadastrar").md-raised.md-primary.md-hue-2(layout="row" layout-align="center center") Cadastrar
+        md-content.md-padding
+            md-list.dsc-grid-list
+                md-item(ng-repeat="problema in vm.problemas")
+                    md-item-content(layout="row").dsc-grid-texto
+                        div(flex)
+                            h3 {{problema.nome}}
+                            h4 {{problema.email}}
+                        div(layout="row" flex layout-align="end end")
+                            md-button(ui-sref="app.problemaEditar({idProblema: problema._id})").dsc-btn-margem.md-fab.md-accent
+                                i.fa.fa-pencil-square-o
+                            md-button(ng-click="vm.remover(problema, $event)").md-fab.md-warn
+                                i.fa.fa-trash

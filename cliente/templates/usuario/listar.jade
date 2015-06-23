@@ -1,0 +1,19 @@
+div(layout="row" layout-margin layout-align="center center")
+    div(flex="80" flex-sm="100").md-whiteframe-z1
+        md-toolbar.md-primary
+            .md-toolbar-tools
+                span Usuario
+                span(flex)
+                md-button(ui-sref="app.usuarioCadastrar").md-raised.md-primary.md-hue-2(layout="row" layout-align="center center") Cadastrar
+        md-content.md-padding
+            md-list.dsc-grid-list
+                md-item(ng-repeat="usuario in vm.usuarios")
+                    md-item-content(layout="row").dsc-grid-texto
+                        div(flex)
+                            h3 {{usuario.nome}}
+                            h4 {{usuario.email}}
+                        div(layout="row" flex layout-align="end end")
+                            md-button(ui-sref="app.usuarioEditar({idUsuario: usuario._id})").dsc-btn-margem.md-fab.md-accent
+                                i.fa.fa-pencil-square-o
+                            md-button(ng-click="vm.remover(usuario, $event)").md-fab.md-warn
+                                i.fa.fa-trash

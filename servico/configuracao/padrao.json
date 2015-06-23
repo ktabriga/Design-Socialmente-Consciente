@@ -1,0 +1,9 @@
+{
+    "porta": 3000,
+    "mongodb":{
+        "uri":"mongodb://dsc:Projet0dsc@ds033607.mongolab.com:33607/dsc"
+    },
+    "caminhoTemplates": "cliente/templates",
+    "caminhoCliente": "/cliente",
+    "SECRET": "SFlkjF#g21ss35RFDS3232RDSaf"
+}

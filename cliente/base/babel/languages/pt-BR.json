@@ -1,0 +1,16 @@
+{
+    "NAME_SYSTEM": "Design Socialmente Consciente",
+    "TITLE_FORM_USER_REGISTER":"Registrar",
+    "LANGUAGE_SELECT": "Selecione sua linguagem",
+    "LANGUAGE_ENGLISH":"Inglês",
+    "LANGUAGE_PORTUGUESE":"Português",
+    "LANGUAGE_SPANISH":"Espanhol",
+    "LABEL_LOGIN": "Nome do Usuário",
+    "LABEL_PASSWORD": "Senha",
+    "LABEL_BTN_LOGIN":"Fazer Login",
+    "LABEL_BTN_SAVE":"Salvar",
+    "LABEL_BTN_CANCEL":"Cancelar",
+    "LABEL_BTN_REGISTER": "Registrar",
+    "LABEL_BTN_CONFIRM": "Confirmar",
+    "LABEL_EMAIL": "Email"
+}

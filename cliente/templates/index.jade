@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        link(rel='icon', href='#{pathToAssets}/docs/favicon.ico')
+        title DSC
+        // Bootstrap core CSS
+        //link(href='/componentes/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+        link(href='/componentes/angular-material/angular-material.min.css', rel='stylesheet')
+        link(href='/componentes/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+        link(href='/componentes/angularjs-toaster/toaster.css', rel='stylesheet')
+        link(href='/css/app.css', rel='stylesheet')
+        base(href='/')
+    body(ng-app="app")
+        toaster-container
+        div(ui-view layout="row")
+
+        //script(src='/componentes/jquery/dist/jquery.min.js')
+        script(src='/componentes/angular/angular.min.js')
+        script(src='/componentes/angular-animate/angular-animate.min.js')
+        script(src='/componentes/angular-aria/angular-aria.min.js')
+        script(src='/componentes/angular-material/angular-material.min.js')
+        script(src='/componentes/oclazyload/dist/ocLazyLoad.min.js')
+        script(src='/componentes/angular-ui-router/release/angular-ui-router.min.js')
+        script(src='/componentes/angularjs-toaster/toaster.js')
+
+        script(src='/build/App.min.js')

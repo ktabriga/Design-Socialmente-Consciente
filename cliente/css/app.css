@@ -1,0 +1,40 @@
+/* MENU */
+.dsc-menu-link {
+    text-transform: none;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+/* GRID */
+
+.dsc-grid-list {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 16px;
+    text-overflow: ellipsis;
+}
+
+.dsc-grid-texto h3 {
+    margin: 0 0 3px 0;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.dsc-grid-texto h4 {
+    margin: 0 0 3px 0;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.dsc-grid-texto p {
+    margin: 0 0 3px 0;
+    font-size: 0.75em;
+}
+
+.dsc-btn-margem {
+    margin-right: 5px;
+}
+

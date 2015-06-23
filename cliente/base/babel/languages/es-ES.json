@@ -1,0 +1,16 @@
+{
+    "NAME_SYSTEM": "*Traduzir*Design Socialmente Consciente..",
+    "LANGUAGE_SELECT": "Seleciona su languaje",
+    "TITLE_FORM_USER_REGISTER":"Regístrate",
+    "LANGUAGE_ENGLISH":"English",
+    "LANGUAGE_PORTUGUESE":"Portuguese",
+    "LANGUAGE_SPANISH":"español",
+    "LABEL_LOGIN" : "Nombre de usuario",
+    "LABEL_PASSWORD" : "Contraseña",
+    "LABEL_BTN_LOGIN":"Español",
+    "LABEL_BTN_SAVE":"***Save..",
+    "LABEL_BTN_CANCEL":"***Cancel",
+    "LABEL_BTN_REGISTER": "***Register",
+    "LABEL_BTN_CONFIRM": "...Confirmar...",
+    "LABEL_EMAIL" : "Email"
+}

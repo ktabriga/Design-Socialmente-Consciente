@@ -1,0 +1,26 @@
+div(flex layout="row" layout-margin layout-align="center center")
+    div(flex="60" flex-sm="100").md-whiteframe-z1
+        md-toolbar.md-primary
+            .md-toolbar-tools
+                span Cadastro de Usuario
+        md-content.md-padding
+            form(name="formUsuario")
+                div(layout="column")
+                    md-input-container
+                        label Nome
+                        input(ng-model="vm.usuario.nome" name="nome" required)
+                        div(ng-messages="formUsuario.nome.$error")
+                            div(ng-message="required") Campo obrigatorio
+                    div(layout layout-sm="column")
+                        md-input-container(flex)
+                            label E-mail
+                            input(ng-model="vm.usuario.email" name="email" md-maxlength="255" required)
+                            div(ng-messages="formUsuario.email.$error")
+                                div(ng-message="required") Campo obrigatorio
+                        md-input-container(flex)
+                            label Senha
+                            input(ng-model="vm.usuario.senha" name="senha" type="password" required)
+                            div(ng-if="!vm.usuario._id" ng-messages="formUsuario.senha.$error")
+                                div(ng-message="required") Campo obrigatorio
+                    div(layout="row" layout-align="end end")
+                        md-button(ng-click="vm.salvarUsuario(vm.usuario)" ng-disabled="formUsuario.$invalid").md-primary.md-raised Salvar

@@ -1,0 +1,15 @@
+md-sidenav.md-sidenav-left.md-whiteframe-z2(md-component-id="menuPrincipal" md-is-locked-open="$media('gt-md')")
+    md-toolbar
+        h1.md-toolbar-tools DSC
+    md-content(layout="column")
+        md-button(ui-sref="app.usuario" ng-click="vm.mostrarMenu()" flex).md-primary.dsc-menu-link
+            i.fa.fa-user  Usuario
+        md-divider
+        md-button(flex).md-primary.dsc-menu-link
+            i.fa.fa-question  Problema
+div(layout="column" flex)
+    md-toolbar
+        div.md-toolbar-tools
+            md-button(ng-click="vm.mostrarMenu()" hide-gt-md).md-primary.md-raised.md-hue-2
+                i.fa.fa-bars.fa-lg
+    section(ui-view="conteudo")

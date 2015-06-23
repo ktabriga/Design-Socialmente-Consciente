@@ -1,0 +1,18 @@
+div(flex layout layout-align="center center" layout-margin)
+    div(flex flex-gt-sm="45"  flex-gt-md="35" flex-gt-lg="25").md-whiteframe-z1
+        md-toolbar.md-primary
+            .md-toolbar-tools
+                span DSC - Login
+        md-content.md-padding
+            form(name="formLogin" ng-submit="vm.logar(vm.usuario)")
+                div(layout="row" layout-align="center center")
+                    md-input-container(flex="70")
+                        label E-mail
+                        input(ng-model="vm.usuario.email" required)
+                div(layout="row" layout-align="center center")
+                    md-input-container(flex="70")
+                        label Senha
+                        input(type="password" ng-model="vm.usuario.senha" required)
+                div(layout="row" layout-align="end center" layout-margin).md
+                    md-button(ui-sref="registrar").md-raised.dsc-btn-margem Registrar
+                    md-button(type="submit" ng-disabled="formLogin.$invalid").md-primary.md-raised Entrar
